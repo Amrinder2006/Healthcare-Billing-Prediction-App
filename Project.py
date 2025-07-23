@@ -42,7 +42,7 @@ Real-World Challenges Solved:
 🤝 Insurance Alignment: By analyzing patterns across different insurance providers, the model can support policy-making and cost optimization.''')
 st.divider()
 st.title("Heart Cleavland Dataset")
-df=pd.read_csv(r"C:\Users\AMRINDER\Desktop\healthcare_dataset.csv")
+pd.read_csv("healthcare_dataset.csv")
 st.header("Dataset")
 st.code(df)
 st.divider()
