@@ -178,7 +178,5 @@ for i,(train_index,test_index) in enumerate(sss.split(x,y)):
     accu=r2_score(y_test, y_pred)
     score.append(accu)
 st.code(f"Mean of r2 score is {np.mean(score)}")
-st.header("Classification Report")
-st.code(classification_report(y_test,y_pred))
 joblib.dump(pipeline,'ml_pipeline.pkl')
 
