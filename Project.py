@@ -173,7 +173,7 @@ for i,(train_index,test_index) in enumerate(sss.split(x,y)):
     model=pipeline.fit(x_train,y_train)
     y_pred=pipeline.predict(x_test)
     st.write(
-            f"[`{i + 1:2}`] **LOSS**: `{mean_squared_error(y_test, y_pred):.3f}` **ACCURACY**: `{r2_score(y_test, y_pred):.3f}`"
+            f"[`{i + 1:2}`] **LOSS**: `{mean_squared_error(y_test, y_pred):.3f}` **R2 Score**: `{r2_score(y_test, y_pred):.3f}`"
     )
     accu=r2_score(y_test, y_pred)
     score.append(accu)
